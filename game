@@ -1,0 +1,466 @@
+package jetbrains;
+
+import java.util.Scanner;
+
+public class
+        Main {
+    public static void main(String[] args) {
+        System.out.println("|-----------------------------------------------------------------------------|");
+        System.out.println("  WELCOME TO COVID-19 AWARENESS TEST, ANSWER QUESTIONS TO TEST YOUR LEVELS");
+        System.out.println("  PRESS ENTER AFTER EACH GUESS; YOU HAVE A SECOND CHANCE FOR WRONG ANSWERS");
+        System.out.println("|-----------------------------------------------------------------------------|\n");
+        Scanner scanner = new Scanner(System.in);
+        String another = "y";
+        while (another.equalsIgnoreCase("y")){
+            String secretword = "CHINA";
+            String guess = "";
+            int guesscount = 0;
+            int guesslimit = 2;
+            int lose = 0;
+            int win = 0;
+            boolean outofguess = false;
+            while (!guess.equals(secretword) && !outofguess){
+                if (guesscount < guesslimit){
+                    System.out.println("GUESS: In which country does the covid-19 first originated from?: ");
+                    guess = scanner.nextLine();
+                    guess = guess.toUpperCase();
+                    guesscount++;
+                }else {
+                    outofguess = true;
+                }
+            }
+            if (outofguess){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing the first game\n");
+            } else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing the first game\n");
+            }
+            String secretword2 = "BORIS JOHNSON";
+            String guess2 = "";
+            int guesscount2 = 0;
+            int guesslimit2 = 2;
+            boolean outofguess2 = false;
+            while (!guess2.equals(secretword2) && !outofguess2){
+                if (guesscount2 < guesslimit2){
+                    System.out.println("Who was the first President to get covid-19? ");
+                    guess2 = scanner.nextLine();
+                    guess2 = guess2.toUpperCase();
+                    guesscount2++;
+                }else {
+                    outofguess2 = true;
+                }
+            }
+            if (outofguess2){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing 2nd game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 2nd game\n");
+            }
+            String secretword3 = "WUHAN";
+            String guess3 = "";
+            int guesscount3 = 0;
+            int guesslimit3 = 2;
+            boolean outofguess3 = false;
+            while (!guess3.equals(secretword3) && !outofguess3){
+                if (guesscount3 < guesslimit3){
+                    System.out.println("Which City was the first outbreak of covid-19? ");
+                    guess3 = scanner.nextLine();
+                    guess3 = guess3.toUpperCase();
+                    guesscount3++;
+                }else {
+                    outofguess3 = true;
+                }
+            }
+            if (outofguess3){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing 3rd game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 3rd game\n");
+            }
+            String secretword4 = "ITALY";
+            String guess4 = "";
+            int guesscount4 = 0;
+            int guesslimit4 = 2;
+            boolean outofguess4 = false;
+            while (!guess4.equals(secretword4) && !outofguess4){
+                if (guesscount4 < guesslimit4){
+                    System.out.println("Which country was the first highest death toll? ");
+                    guess4 = scanner.nextLine();
+                    guess4 = guess4.toUpperCase();
+                    guesscount4++;
+                }else {
+                    outofguess4 = true;
+                }
+            }
+            if (outofguess4){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing 4th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 4th game\n");
+            }
+            String secretword5 = "NOSE MASK";
+            String guess5 = "";
+            int guesscount5 = 0;
+            int guesslimit5 = 2;
+            boolean outofguess5 = false;
+            while (!guess5.equals(secretword5) && !outofguess5){
+                if (guesscount5 < guesslimit5){
+                    System.out.println("What is the common or most popularly used PPE of covid-19? ");
+                    guess5 = scanner.nextLine();
+                    guess5 = guess5.toUpperCase();
+                    guesscount5++;
+                }else {
+                    outofguess5 = true;
+                }
+            }
+            if (outofguess5){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing 5th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("you have won " + win + " on playing 5th game\n");
+            }
+            String hidenans = "MADAGASCAR";
+            String ans = "";
+            int anscount = 0;
+            int anslimit = 2;
+            boolean noans = false;
+            while (!ans.equals(hidenans) && !noans){
+                if (anscount < anslimit){
+                    System.out.println("Which African country first produced covid-19 drug? ");
+                    ans = scanner.nextLine();
+                    ans = ans.toUpperCase();
+                    anscount++;
+                }else {
+                    noans = true;
+                }
+            }
+            if (noans){
+                lose = (lose + 5);
+                System.out.println("You loose " + lose + " on playing 6th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 6th game\n");
+            }
+            String hidenans7 = "VENTILATOR";
+            String ans7 = "";
+            int anscount7 = 0;
+            int anslimit7 = 2;
+            boolean noans7 = false;
+            while (!ans7.equals(hidenans7) && !noans7){
+                if (anscount7 < anslimit7){
+                    System.out.println("What common device is used on covid-19 patient who is on critical condition and can not breath? ");
+                    ans7 = scanner.nextLine();
+                    ans7 = ans7.toUpperCase();
+                    anscount7++;
+                }else {
+                    noans7 = true;
+                }
+            }
+            if (noans7){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " on playing 7th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 7th game\n");
+            }
+            String hidenans8 = "LOCKDOWN";
+            String ans8 = "";
+            int anscount8 = 0;
+            int anslimit8 = 2;
+            boolean noans8 = false;
+            while (!ans8.equals(hidenans8) && !noans8){
+                if (anscount8 < anslimit8){
+                    System.out.println("You are forced to stay home to avoid the spread of covid-19, you stay home in order not to break this law is called? ");
+                    ans8 = scanner.nextLine();
+                    ans8 = ans8.toUpperCase();
+                    anscount8++;
+                }else {
+                    noans8 = true;
+                }
+            }
+            if (noans8){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " on playing 8th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 8th game\n");
+            }
+            String hidenans9 = "PANDEMIC";
+            String ans9 = "";
+            int anscount9 = 0;
+            int anslimit9 = 2;
+            boolean noans9 = false;
+            while (!ans9.equals(hidenans9) && !noans9){
+                if (anscount9 < anslimit9){
+                    System.out.println("What term is used for the worldwide spread of covid-19? ");
+                    ans9 = scanner.nextLine();
+                    ans9 = ans9.toUpperCase();
+                    anscount9++;
+                }else {
+                    noans9 = true;
+                }
+            }
+            if (noans9){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " on playing 9th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " on playing 9th game\n");
+            }
+            String hidenans10 = "SOCIAL DISTANCING";
+            String ans10 = "";
+            int anscount10 = 0;
+            int anslimit10 = 2;
+            boolean noans10 = false;
+            while (!ans10.equals(hidenans10) && !noans10){
+                if (anscount10 < anslimit10){
+                    System.out.println("If you don't contact or get closer to your neighbor is called? ");
+                    ans10 = scanner.nextLine();
+                    ans10 = ans10.toUpperCase();
+                    anscount10++;
+                }else {
+                    noans10 = true;
+                }
+            }
+            if (noans10){
+                lose = (lose + 5);
+                System.out.println("You lost " + lose + " points on playing 10th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " ponts on playing 10th game\n");
+            }
+            String secretword11 = "SEVERE ACUTE RESPIRATORY SYNDROME";
+            String guess11 = "";
+            int guesscount11 = 0;
+            int guesslimit11 = 2;
+            boolean outofguess11 = false;
+            while (!guess11.equals(secretword11) && !outofguess11){
+                if (guesscount11 < guesslimit11){
+                    System.out.println("Another name for covid-19 is SARS-COV-2, What is the full name of 'SARS'? ");
+                    guess11 = scanner.nextLine();
+                    guess11 = guess11.toUpperCase();
+                    guesscount11++;
+                }else {
+                    outofguess11 = true;
+                }
+            }
+            if (outofguess11){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 11th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credits on playing 11th game\n");
+            }
+            String secretword12 = "FRONTLINE WORKERS";
+            String guess12 = "";
+            int guesscount12 = 0;
+            int guesslimit12 = 2;
+            boolean outofguess12 = false;
+            while (!guess12.equals(secretword12) && !outofguess12){
+                if (guesscount12 < guesslimit12){
+                    System.out.println("Health workers directly working with covid-19 patients are called? ");
+                    guess12 = scanner.nextLine();
+                    guess12 = guess12.toUpperCase();
+                    guesscount12++;
+                }else {
+                    outofguess12 = true;
+                }
+            }
+            if (outofguess12){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 12th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credits on playing 12th game\n");
+            }
+            String secretword13 = "MUTATION";
+            String guess13 = "";
+            int guesscount13 = 0;
+            int guesslimit13 = 2;
+            boolean outofguess13 = false;
+            while (!guess13.equals(secretword13) && !outofguess13){
+                if (guesscount13 < guesslimit13){
+                    System.out.println("The ability of covid-19 virus to change its genetic or chromosomal structure is called? ");
+                    guess13 = scanner.nextLine();
+                    guess13 = guess13.toUpperCase();
+                    guesscount13++;
+                }else {
+                    outofguess13 = true;
+                }
+            }
+            if (outofguess13) {
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 13th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 13th game\n");
+            }
+            String secretword14 = "SOCIAL PROTOCOLS";
+            String guess14 = "";
+            int guesscount14 = 0;
+            int guesslimit14 = 2;
+            boolean outofguess14 = false;
+            while (!guess14.equals(secretword14) && !outofguess14){
+                if (guesscount14 < guesslimit14){
+                    System.out.println("Code of safety conducts we observe to avoid covid-19 is called? ");
+                    guess14 = scanner.nextLine();
+                    guess14 = guess14.toUpperCase();
+                    guesscount14++;
+                }else {
+                    outofguess14 = true;
+                }
+            }
+            if (outofguess14){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 14th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 14th game\n");
+            }
+            String secretword15 = "QUARANTINE";
+            String guess15 = "";
+            int guesscount15 = 0;
+            int guesslimit15 = 2;
+            boolean outofguess15 = false;
+            while (!guess15.equals(secretword15) && !outofguess15){
+                if (guesscount15 < guesslimit15){
+                    System.out.println("Enforced isolation to avoid the spread of covid-19 is called? ");
+                    guess15 = scanner.nextLine();
+                    guess15 = guess15.toUpperCase();
+                    guesscount15++;
+                }else {
+                    outofguess15 = true;
+                }
+            }
+            if (outofguess15){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 15th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 15th game\n");
+            }
+            String hidenans16 = "PERSONAL PROTECTIVE EQUIPMENT";
+            String ans16 = "";
+            int anscount16 = 0;
+            int anslimit16 = 2;
+            boolean noans16 = false;
+            while (!ans16.equals(hidenans16) && !noans16){
+                if (anscount16 < anslimit16){
+                    System.out.println("What is the full name of 'PPE' ");
+                    ans16 = scanner.nextLine();
+                    ans16 = ans16.toUpperCase();
+                    anscount16++;
+                }else {
+                    noans16 = true;
+                }
+            }
+            if (noans16){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 16th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 16th game\n");
+            }
+            String hidenans17 = "MUTATION";
+            String ans17 = "";
+            int anscount17 = 0;
+            int anslimit17 = 2;
+            boolean noans17 = false;
+            while (!ans17.equals(hidenans17) && !noans17){
+                if (anscount17 < anslimit17){
+                    System.out.println("Vacine for covid-19 is delayed because of its ability to change to different genetic chromosomes. This process is called? ");
+                    ans17 = scanner.nextLine();
+                    ans17 = ans17.toUpperCase();
+                    anscount17++;
+                }else {
+                    noans17 = true;
+                }
+            }
+            if (noans17){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 17th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 17th game\n");
+            }
+            String hidenans18 = "SARS";
+            String ans18 = "";
+            int anscount18 = 0;
+            int anslimit18 = 2;
+            boolean noans18 = false;
+            while (!ans18.equals(hidenans18) && !noans18){
+                if (anscount18 < anslimit18){
+                    System.out.println("Covid-19 has got a similar respiratory disease of unknown etiology");
+                    System.out.println(" which also originated from China in 2003. What is its name? ");
+                    ans18 = scanner.nextLine();
+                    ans18 = ans18.toUpperCase();
+                    anscount18++;
+                }else {
+                    noans18 = true;
+                }
+            }
+            if (noans18){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 18th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 18th game\n");
+            }
+            String hidenans19 = "CORONA VIRUS DISEASE 2019";
+            String ans19 = "";
+            int anscount19 = 0;
+            int anslimit19 = 2;
+            boolean noans19 = false;
+            while (!ans19.equals(hidenans19) && !noans19){
+                if (anscount19 < anslimit19){
+                    System.out.println("What is the full name of covid-19? (no 'of' and '-') ");
+                    ans19 = scanner.nextLine();
+                    ans19 = ans19.toUpperCase();
+                    anscount19++;
+                }else {
+                    noans19 = true;
+                }
+            }
+            if (noans19){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 19th game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 19th game\n");
+            }
+            String hidenans20 = "SPUTNIK";
+            String ans20 = "";
+            int anscount20 = 0;
+            int anslimit20 = 2;
+            boolean noans20 = false;
+            while (!ans20.equals(hidenans20) && !noans20){
+                if (anscount20 < anslimit20){
+                    System.out.println("What is the name of Russian's first vaccine to cure covid-19? ");
+                    ans20 = scanner.nextLine();
+                    ans20 = ans20.toUpperCase();
+                    anscount20++;
+                }else {
+                    noans20 = true;
+                }
+            }
+            if (noans20){
+                lose = (lose + 5);
+                System.out.println("You have lost " + lose + " points on playing 20th game no more game\n");
+            }else {
+                win = (win + 5);
+                System.out.println("You have won " + win + " credit on playing 20th game no more game\n");
+            }
+            int net = (win - lose);
+            System.out.println("Your awareness to this disease/enemy is " + lose + "%, below average");
+            System.out.println("Your awareness level to this disease is " + win + "%, above average");
+            System.out.println("Your overall net knowledge about this disease is " + net + "%");
+            System.out.println("\nDo you want to play more games? (y/n) ");
+            another = scanner.nextLine();
+        }
+    }
+}
